@@ -23,7 +23,7 @@
 .bienvenida{
     background-color: rgba(44,54,57,1) ;
     color: white;
-    font-family: 'Inconsolata', monospace;
+    font-family:sans-serif;
     font-size:18px;
     margin: 10px;
     border-radius:20px ;
@@ -38,7 +38,7 @@
     color: white;
     text-align: center;
     font-size: 2rem;
-    font-family: 'Inconsolata', monospace;
+    font-family:sans-serif;
     padding-top: 20px;
     text-decoration:underline;
 }
@@ -47,8 +47,9 @@
     color: white;
     text-align: center;
     font-size: 2rem;
-    font-family: 'Inconsolata', monospace;
+    font-family:sans-serif;
     text-decoration:underline;
+    text-transform: lowercase   ;
 }
 
 
@@ -152,20 +153,19 @@ img{
 
     
 .carrete{
-    padding-top: 10px;
-    margin: 20px;
+    margin: 3px;
     display: flex;
-    width: 700px;
+    width: 600px;
     height: 600px;
-    align-self:center;
-    & img{
-        width: 20px;
+    align-self:center;  
+        img{
+        width:15px;
         flex-grow: 1;
         object-fit: cover;
-        opacity: 100%;
         transition: .6s ease;
-        &:hover{
-            opacity:initial;
+        padding: 1px;
+      
+        &:hover {
             align-items: center;
             cursor: pointer;
             width:500px;
@@ -174,6 +174,7 @@ img{
             background-color: black;
             backface-visibility: visible;
             zoom: 1;
+            border-radius: 5%;
         }
     }
     
