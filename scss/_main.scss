@@ -1,6 +1,6 @@
 .main{
     grid-area: main;
-    margin: 10px;
+    grid-area: 20px;
     display: flex;
     justify-content: auto;
     padding:auto;
@@ -8,7 +8,7 @@
     background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
     background-color: gray;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px;
     padding-inline-start: 10px;
     border-radius:20px ;
     -webkit-border-radius:20px ;
@@ -30,7 +30,7 @@
     p {
         text-align: center;
         justify-content: auto;
-        margin: 10px;
+        margin: 30px;
     }
 }
 
@@ -95,6 +95,8 @@
     flex-direction: row;
     justify-content: center;
     padding-left: 35%;
+    margin-block-end: 5%;
+    margin-top: 5%;
 
 img{
     width: 100%;
@@ -153,12 +155,13 @@ img{
 
     
 .carrete{
-    margin: 3px;
+  
+    margin-top: 40px;
     display: flex;
     width: 600px;
     height: 600px;
     align-self:center;  
-        img{
+        & img{
         width:15px;
         flex-grow: 1;
         object-fit: cover;

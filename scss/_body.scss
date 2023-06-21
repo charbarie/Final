@@ -19,6 +19,8 @@ body{
     -o-background-size: cover;
     background-size: cover;
     opacity: 90%;
+    min-height: 100vh;
+    
 }
 h1{
     color: white;
@@ -33,7 +35,7 @@ h1{
   flex-direction: column;
   position: fixed;
   left: 94%;
-  top: 60%;
+  top: 30%;
   top:1x;
 }
 .redes img{

@@ -15,7 +15,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 90%; }
+  opacity: 90%;
+  min-height: 100vh; }
 
 h1 {
   color: white;
@@ -28,7 +29,7 @@ h1 {
   flex-direction: column;
   position: fixed;
   left: 94%;
-  top: 60%;
+  top: 30%;
   top: 1x; }
 
 .redes img {
@@ -41,10 +42,12 @@ h1 {
   -o-border-radius: 40%; }
 
 .header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  top: 0%;
   padding: 0%;
   grid-area: header;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
@@ -104,12 +107,14 @@ h1 {
     padding: 10px;
     justify-self: start; }
   .nav div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
     color: whitesmoke;
-    padding: 20px;
     margin: 10px;
     display: flex;
     text-align: center;
-    background-color: #2c3639;
+    background-color: #3f4e4f;
     border-radius: 20px;
     padding-inline-start: 10px; }
   .nav.nos {
@@ -118,6 +123,7 @@ h1 {
     opacity: 0%; }
 
 .news {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   font-family: 'Inconsolata', monospace;
@@ -140,7 +146,7 @@ h1 {
 
 .main {
   grid-area: main;
-  margin: 10px;
+  grid-area: 20px;
   display: flex;
   justify-content: auto;
   padding: auto;
@@ -148,7 +154,7 @@ h1 {
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
   flex-direction: column;
-  margin: 10px;
+  margin: 15px;
   padding-inline-start: 10px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -169,7 +175,7 @@ h1 {
   .bienvenida p {
     text-align: center;
     justify-content: auto;
-    margin: 10px; }
+    margin: 30px; }
 
 .main h3 {
   color: white;
@@ -221,7 +227,9 @@ h1 {
 .carousel-item {
   flex-direction: row;
   justify-content: center;
-  padding-left: 35%; }
+  padding-left: 35%;
+  margin-block-end: 5%;
+  margin-top: 5%; }
   .carousel-item img {
     width: 100%;
     padding: 0%;
@@ -272,7 +280,7 @@ form div {
   font-weight: bold; }
 
 .carrete {
-  margin: 3px;
+  margin-top: 40px;
   display: flex;
   width: 600px;
   height: 600px;
@@ -313,24 +321,25 @@ form div {
     color: white; }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80%;
+  padding: .1px;
   grid-area: footer;
-  position: relative;
+  width: 100%;
   font-family: 'Oswald', sans-serif;
   font-size: 12;
   background: #a27b5c;
   background: linear-gradient(0deg, rgba(162, 123, 92, 0.928922) 30%, #2c3639 95%); }
-
-footer h2 {
-  color: white;
-  padding: 2px; }
-
-.footer p {
-  padding: 1px;
-  font-size: 24px; }
-
-footer a {
-  color: white;
-  text-decoration: none; }
-
-footer a:hover {
-  text-decoration: underline; }
+  .footer h2 {
+    color: white;
+    padding: 2px; }
+  .footer p {
+    padding: 1px;
+    font-size: 24px; }
+  .footer a {
+    color: white;
+    text-decoration: none; }
+    .footer a:hover {
+      text-decoration: underline; }
