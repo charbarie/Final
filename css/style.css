@@ -5,11 +5,11 @@
 
 body {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 0.4fr 2fr 1.1fr;
-  grid-template-rows: 0.2fr 2.6fr 0.2fr;
-  gap: 0% 2%;
-  grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+  grid-auto-columns: .1fr;
+  grid-template-columns: 70fr 50fr 100fr;
+  grid-template-rows: .1fr .1fr .1fr;
+  gap: 0% autoz;
+  grid-template-areas: "header header header" "article main aside" "footer footer footer";
   background-color: white;
   font-family: 'Roboto Slab', monospace;
   font-weight: auto;
@@ -21,7 +21,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 90%; }
+  opacity: 100%; }
 
 h1 {
   color: white;
@@ -50,7 +50,6 @@ h1 {
   grid-area: header;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
@@ -66,8 +65,7 @@ h1 {
     justify-content: space-between;
     margin-left: 2rem;
     float: right; }
-    .header .menu \
-ul {
+    .header .menu ul {
       display: flex;
       flex-direction: row;
       list-style: none;
@@ -75,16 +73,13 @@ ul {
       padding-left: 20px;
       margin-left: 20px;
       float: left; }
-      .header .menu \
-ul li {
+      .header .menu ul li {
         padding-left: 20px;
         margin-left: 20px; }
-        .header .menu \
-ul li a {
+        .header .menu ul li a {
           text-decoration: none;
           color: #dcd7c9; }
-          .header .menu \
-ul li a:hover {
+          .header .menu ul li a:hover {
             color: black;
             background-color: #e3ccae;
             border-radius: 50%;
@@ -96,79 +91,101 @@ ul li a:hover {
             -ms-transition: 0.3s;
             -o-transition: 0.3s; }
 
-/*.nav {
-    gap: 8px 8px; 
-    grid-area: nav;
-    padding:5px;
-    margin:10px;
+.filtroProductos {
+  color: aliceblue;
+  justify-self: left;
+  padding: 20px;
+  margin: 3%;
+  margin-top: 20px;
+  margin-block-end: auto;
+  justify-content: left; }
+  .filtroProductos ul {
+    list-style: none;
+    justify-content: left; }
+    .filtroProductos ul li {
+      font-style: none; }
+
+article {
+  gap: 0px 0px;
+  grid-area: article;
+  padding: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: #a27b5c;
+  background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
+  article h2 {
+    color: aliceblue;
+    text-decoration: underline dotted gainsboro;
+    text-align: center;
+    padding: 10px;
+    justify-self: start; }
+  article div {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
+    color: whitesmoke;
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #3f4e4f;
     border-radius: 20px;
-    background: rgb(162,123,92);
-    background: radial-gradient(circle, rgba(162,123,92,1) 10%, rgba(44,54,57,1) 85%);
-    & h2{
-        color: aliceblue;
-        text-decoration: underline dotted gainsboro;
-        text-align: center;
-        padding: 10px;
-        justify-self: start;
-    }
-    div{
-        display: flex;
-        flex-direction: column;
-        padding-top: 40px;  
-        color: rgb(245, 245, 245);
-        margin: 10px;
-        display: flex;
-        text-align: center;
-        background-color: #3f4e4f;
-        border-radius: 20px;
-        padding-inline-start: 10px;
-    }
-    &.nos {
-        opacity: 0%;
-            
-        }
-    &.contactanos {
-            opacity: 0%;
-                
-            }
+    padding-inline-start: 10px; }
+  article.nos {
+    opacity: 0%; }
+  article.contactanos {
+    opacity: 0%; }
 
-}
-.news{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Inconsolata', monospace;
-        font-size: 1.5rem;
-        line-height: 1.5;
-        background-color: rgb(21, 111, 189);
-        border: gainsboro;
-        overflow: auto;
-        color: rgb(249, 250, 250);
-        & h2{
-            text-align: auto;
-            font-size: 18px;
-            line-height: normal;
-        }
-        & p{
-            font-family: 'Roboto Slab', serif;
-            font-size: 1rem;
-            line-height: 1;
-            margin: 0;
-            padding: 0;
-        }
-    
+.news {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.5;
+  background-color: #39464a;
+  border: gainsboro;
+  overflow: auto;
+  color: #f9fafa; }
+  .news h2 {
+    text-align: auto;
+    font-size: 24px;
+    line-height: normal; }
+  .news h3 {
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    justify-self: start;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 0%; }
+  .news p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+    padding: 0; }
 
+.filtroProductos {
+  color: aliceblue;
+  justify-self: left;
+  padding: 20px;
+  margin: 3%;
+  margin-top: 20px;
+  margin-block-end: auto;
+  justify-content: left; }
+  .filtroProductos ul {
+    list-style: none;
+    justify-content: left; }
+    .filtroProductos ul li {
+      font-style: none; }
 
-}
-*/
 .main {
+  margin-top: 50rem;
   grid-area: main;
   grid-area: 20px;
   display: flex;
-  justify-content: auto;
-  padding: auto;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
@@ -321,6 +338,43 @@ form div {
       zoom: 1;
       border-radius: 5%; }
 
+.mainProductos {
+  grid-area: main;
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  grid-area: 20px;
+  display: flex;
+  background: #a27b5c;
+  background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+  background-color: gray;
+  margin: 15px;
+  padding-inline-start: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+  .mainProductos .menuVentas {
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-left: 30%; }
+    .mainProductos .menuVentas img {
+      width: 200px;
+      min-height: 150px;
+      opacity: none;
+      border-radius: 30%;
+      -webkit-border-radius: 30%;
+      -moz-border-radius: 30%;
+      -ms-border-radius: 30%;
+      -o-border-radius: 30%;
+      border-color: black;
+      border-style: double; }
+
 .aside {
   gap: 8px 8px;
   margin-right: 10pxnpm run watch-css;
@@ -348,7 +402,7 @@ form div {
   grid-area: footer;
   width: 100%;
   font-family: 'Oswald', sans-serif;
-  font-size: 12;
+  font-size: 12px;
   background: #a27b5c;
   background: linear-gradient(0deg, rgba(162, 123, 92, 0.928922) 30%, #2c3639 95%); }
   .footer h2 {

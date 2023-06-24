@@ -1,0 +1,45 @@
+
+
+.mainProductos{
+    grid-area: main;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    grid-area: 20px;
+    display: flex;
+    background: rgb(162,123,92);
+    background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+    background-color: gray;
+    margin: 15px;
+    padding-inline-start: 10px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+
+    .menuVentas{
+
+        flex-wrap: wrap;
+        padding: 40px;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin-left: 30%;
+        & img{
+            width: 200px;
+            min-height: 150px;
+            opacity: none;
+            border-radius: 30%;
+            -webkit-border-radius: 30%;
+            -moz-border-radius: 30%;
+            -ms-border-radius: 30%;
+            -o-border-radius: 30%;
+            border-color: black;
+            border-style: double;
+        }
+
+    }
+}
+

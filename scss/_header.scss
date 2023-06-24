@@ -1,8 +1,7 @@
 .header {
-        grid-area: header;
+  grid-area: header;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   background: rgb(162, 123, 92);
   background: linear-gradient(
@@ -21,20 +20,20 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 2rem;
-    float: right;\
+    float: right;
     
     ul {
         display: flex;
         flex-direction: row;
         list-style: none;
-        font-size: 36px;
+      font-size: 36px;
       padding-left: 20px;
       margin-left: 20px;
       float: left;
       li {
         padding-left: 20px;
         margin-left: 20px;
-        
+
         & a {
           text-decoration: none;
           color: rgb(220, 215, 201);

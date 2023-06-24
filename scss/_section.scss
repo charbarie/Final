@@ -1,8 +1,10 @@
-/*.nav {
-    gap: 8px 8px; 
-    grid-area: nav;
+@import "sectionProductos";
+
+article {
+    gap: 0px 0px; 
+    grid-area: article;
     padding:5px;
-    margin:10px;
+    margin:10px auto ;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -38,30 +40,40 @@
 
 }
 .news{
-        padding: 2rem;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         font-family: 'Inconsolata', monospace;
-        font-size: 1.5rem;
         line-height: 1.5;
-        background-color: rgb(21, 111, 189);
+        background-color:  rgb(57, 70, 74);
         border: gainsboro;
         overflow: auto;
         color: rgb(249, 250, 250);
-        & h2{
+        h2 {
             text-align: auto;
-            font-size: 18px;
+            font-size: 24px;
             line-height: normal;
+        }
+        h3{
+                font-size: 18px;
+                color: aliceblue;
+                text-align: center;
+                padding: 10px;
+                justify-self: start;
+                font-weight: 100;
+                line-height: 20px;
+                padding: 0%;
+            
         }
         & p{
             font-family: 'Roboto Slab', serif;
-            font-size: 1rem;
+            font-size: 12px;
             line-height: 1;
             margin: 0;
             padding: 0;
         }
+
     
 
 
 }
-*/

@@ -1,9 +1,8 @@
 .main{
+    margin-top:50rem;
     grid-area: main;
     grid-area: 20px;
     display: flex;
-    justify-content: auto;
-    padding:auto;
     background: rgb(162,123,92);
     background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
     background-color: gray;
@@ -49,7 +48,7 @@
     font-size: 2rem;
     font-family:sans-serif;
     text-decoration:underline;
-    text-transform: lowercase   ;
+    text-transform: lowercase;
 }
 
 

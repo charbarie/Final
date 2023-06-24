@@ -1,12 +1,12 @@
 body{
   display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 0.4fr 2fr 1.1fr; 
-  grid-template-rows: 0.2fr 2.6fr 0.2fr; 
-  gap: 0% 2%; 
+  grid-auto-columns: .1fr; 
+  grid-template-columns: 70fr 50fr 100fr; 
+  grid-template-rows: .1fr .1fr .1fr; 
+  gap: 0% autoz; 
     grid-template-areas: 
       "header header header"
-      "nav main aside"
+      "article main aside"
       "footer footer footer"; 
     background-color:white;
     font-family: 'Roboto Slab', monospace;
@@ -19,7 +19,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 90%;
+    opacity: 100%;
    
     
 }
