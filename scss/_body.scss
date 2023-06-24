@@ -1,8 +1,9 @@
 body{
-    display: grid; 
-    grid-template-columns: 0.9fr 1.7fr 0.4fr; 
-    grid-template-rows: 0.1fr 2.2fr 0.4fr; 
-    gap: 8px 8px; 
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 0.4fr 2fr 1.1fr; 
+  grid-template-rows: 0.2fr 2.6fr 0.2fr; 
+  gap: 0% 2%; 
     grid-template-areas: 
       "header header header"
       "nav main aside"
@@ -19,7 +20,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     opacity: 90%;
-    min-height: 100vh;
+   
     
 }
 h1{
