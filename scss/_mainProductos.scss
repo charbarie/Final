@@ -1,4 +1,21 @@
-
+.menuVenta{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    & img{
+        width: 200px;
+        min-height: 150px;
+        opacity: none;
+        border-radius: 30%;
+        -webkit-border-radius: 30%;
+        -moz-border-radius: 30%;
+        -ms-border-radius: 30%;
+        -o-border-radius: 30%;
+        border-color: black;
+        border-style: double;
+    }
+}
 
 .mainProductos{
     grid-area: main;
@@ -20,7 +37,6 @@
     -o-border-radius:20px ;
 
     .menuVentas{
-
         flex-wrap: wrap;
         padding: 40px;
         align-items: center;

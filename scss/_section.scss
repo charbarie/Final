@@ -1,12 +1,13 @@
-@import "sectionProductos";
+
 
 article {
     gap: 0px 0px; 
     grid-area: article;
-    padding:5px;
+    padding:20px;
     margin:10px auto ;
     display: flex;
     flex-direction: column;
+    margin-block-end: auto;
     border-radius: 20px;
     background: rgb(162,123,92);
     background: radial-gradient(circle, rgba(162,123,92,1) 10%, rgba(44,54,57,1) 85%);

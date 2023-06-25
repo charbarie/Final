@@ -1,0 +1,21 @@
+
+.mainNosotros{
+    color: white;
+    grid-area: main;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    grid-area: 20px;
+    display: flex;
+    background: rgb(162,123,92);
+    background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+    background-color: gray;
+    margin: 15px;
+    padding-inline-start: 10px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}

@@ -91,27 +91,14 @@ h1 {
             -ms-transition: 0.3s;
             -o-transition: 0.3s; }
 
-.filtroProductos {
-  color: aliceblue;
-  justify-self: left;
-  padding: 20px;
-  margin: 3%;
-  margin-top: 20px;
-  margin-block-end: auto;
-  justify-content: left; }
-  .filtroProductos ul {
-    list-style: none;
-    justify-content: left; }
-    .filtroProductos ul li {
-      font-style: none; }
-
 article {
   gap: 0px 0px;
   grid-area: article;
-  padding: 5px;
+  padding: 20px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
+  margin-block-end: auto;
   border-radius: 20px;
   background: #a27b5c;
   background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
@@ -168,24 +155,23 @@ article {
     padding: 0; }
 
 .filtroProductos {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
   color: aliceblue;
-  justify-self: left;
-  padding: 20px;
-  margin: 3%;
   margin-top: 20px;
-  margin-block-end: auto;
-  justify-content: left; }
-  .filtroProductos ul {
-    list-style: none;
-    justify-content: left; }
-    .filtroProductos ul li {
-      font-style: none; }
+  margin-left: 0px;
+  margin-block-end: auto; }
+  .filtroProductos ul li {
+    list-style: none; }
 
 .main {
   margin-top: 50rem;
   grid-area: main;
   grid-area: 20px;
   display: flex;
+  margin: auto;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
@@ -230,36 +216,6 @@ article {
   text-decoration: underline;
   text-transform: lowercase; }
 
-.menuVenta {
-  font-family: 'Inconsolata', monospace;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .menuVenta img {
-    width: 200px;
-    min-height: 150px;
-    opacity: none;
-    border-radius: 30%;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
-    border-color: black;
-    border-style: double; }
-
-.productos {
-  display: flex;
-  color: white;
-  padding: 30px;
-  font-size: 28px; }
-
-.productos li {
-  list-style: none;
-  font-size: 28px; }
-
-.productos input {
-  width: 20px; }
-
 .carousel-item {
   flex-direction: row;
   justify-content: center;
@@ -284,16 +240,6 @@ article {
   padding: 12px;
   text-align: center;
   display: center; }
-
-.nos {
-  color: white;
-  grid-area: main;
-  font-family: 'Inconsolata', monospace;
-  margin: 60px 100px;
-  padding: 60px;
-  height: auto;
-  text-align: center;
-  font-size: 2rem; }
 
 form {
   font-family: 'Roboto Slab', serif;
@@ -338,6 +284,23 @@ form div {
       zoom: 1;
       border-radius: 5%; }
 
+.menuVenta {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .menuVenta img {
+    width: 200px;
+    min-height: 150px;
+    opacity: none;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    border-color: black;
+    border-style: double; }
+
 .mainProductos {
   grid-area: main;
   font-family: 'Inconsolata', monospace;
@@ -375,6 +338,57 @@ form div {
       border-color: black;
       border-style: double; }
 
+.mainNoticias {
+  width: 70rem;
+  margin-top: 50rem;
+  grid-area: main;
+  display: flex;
+  margin: 20px;
+  background: #a27b5c;
+  background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding-inline-start: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+  .mainNoticias section {
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #a27b5c;
+    background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
+  .mainNoticias h3 {
+    font-size: 18px; }
+  .mainNoticias p {
+    font-size: 12px; }
+
+.mainNosotros {
+  color: white;
+  grid-area: main;
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  grid-area: 20px;
+  display: flex;
+  background: #a27b5c;
+  background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+  background-color: gray;
+  margin: 15px;
+  padding-inline-start: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+
 .aside {
   gap: 8px 8px;
   margin-right: 10pxnpm run watch-css;
@@ -394,13 +408,13 @@ form div {
     color: white; }
 
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 80%;
   padding: .1px;
   grid-area: footer;
-  width: 100%;
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
   background: #a27b5c;
@@ -409,8 +423,7 @@ form div {
     color: white;
     padding: 2px; }
   .footer p {
-    padding: 1px;
-    font-size: 24px; }
+    padding: 1px; }
   .footer a {
     color: white;
     text-decoration: none; }
