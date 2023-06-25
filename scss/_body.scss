@@ -1,9 +1,11 @@
 body{
   display: grid; 
-  grid-auto-columns: .1fr; 
+  position: relative;
+  min-height: 100vh;
+  grid-auto-columns: 1fr; 
   grid-template-columns: 70fr 50fr 100fr; 
   grid-template-rows: .1fr .1fr .1fr; 
-  gap: 0% autoz; 
+  gap: 5% 0%; 
     grid-template-areas: 
       "header header header"
       "article main aside"

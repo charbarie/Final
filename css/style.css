@@ -5,10 +5,12 @@
 
 body {
   display: grid;
-  grid-auto-columns: .1fr;
+  position: relative;
+  min-height: 100vh;
+  grid-auto-columns: 1fr;
   grid-template-columns: 70fr 50fr 100fr;
   grid-template-rows: .1fr .1fr .1fr;
-  gap: 0% autoz;
+  gap: 5% 0%;
   grid-template-areas: "header header header" "article main aside" "footer footer footer";
   background-color: white;
   font-family: 'Roboto Slab', monospace;
@@ -92,7 +94,7 @@ h1 {
             -o-transition: 0.3s; }
 
 article {
-  gap: 0px 0px;
+  padding-bottom: 30px;
   grid-area: article;
   padding: 20px;
   margin: 10px auto;
@@ -167,15 +169,17 @@ article {
     list-style: none; }
 
 .main {
-  margin-top: 50rem;
+  color: white;
   grid-area: main;
   grid-area: 20px;
+  font-family: 'Inconsolata', monospace;
   display: flex;
-  margin: auto;
+  width: 60rem;
+  flex-direction: column;
+  grid-area: 20px;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
-  flex-direction: column;
   margin: 15px;
   padding-inline-start: 10px;
   border-radius: 20px;
@@ -240,26 +244,6 @@ article {
   padding: 12px;
   text-align: center;
   display: center; }
-
-form {
-  font-family: 'Roboto Slab', serif;
-  font-size: 20px;
-  margin: 20px 500px;
-  padding: 20px;
-  height: 20px 12px;
-  text-align: center;
-  color: black;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px; }
-
-form div {
-  text-justify: start;
-  margin-bottom: 2px;
-  font-size: 20px;
-  font-weight: bold; }
 
 .carrete {
   margin-top: 40px;
@@ -347,7 +331,6 @@ form div {
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   flex-direction: column;
-  align-items: center;
   margin: 30px;
   padding-inline-start: 10px;
   border-radius: 20px;
@@ -362,7 +345,7 @@ form div {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    background: #a27b5c;
+    background: a27b5c;
     background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
   .mainNoticias h3 {
     font-size: 18px; }
@@ -374,10 +357,10 @@ form div {
   grid-area: main;
   font-family: 'Inconsolata', monospace;
   display: flex;
-  flex-direction: column;
   width: 60rem;
+  margin: auto 300px;
+  flex-direction: column;
   grid-area: 20px;
-  display: flex;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
@@ -388,6 +371,34 @@ form div {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px; }
+  .mainNosotros p {
+    align-items: center; }
+
+.mainContactanos {
+  width: 800px;
+  display: flex;
+  grid-area: main;
+  justify-content: center;
+  flex-direction: column;
+  background: #a27b5c;
+  background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+  background-color: gray;
+  margin: 15px;
+  padding-inline-start: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+  .mainContactanos .form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    margin: 0%; }
+    .mainContactanos .form label {
+      align-items: center;
+      padding-left: 2%; }
 
 .aside {
   gap: 8px 8px;
@@ -408,24 +419,35 @@ form div {
     color: white; }
 
 .footer {
-  width: 100%;
+  padding-block-end: auto;
+  grid-area: footer;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 80%;
-  padding: .1px;
-  grid-area: footer;
-  font-family: 'Oswald', sans-serif;
-  font-size: 12px;
+  width: 100%;
+  margin-bottom: 0px;
+  background: #a27b5c;
+  background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   background: #a27b5c;
   background: linear-gradient(0deg, rgba(162, 123, 92, 0.928922) 30%, #2c3639 95%); }
   .footer h2 {
     color: white;
-    padding: 2px; }
+    margin-left: 12px;
+    margin-block-end: 5px; }
   .footer p {
-    padding: 1px; }
+    margin: 0px 0px 0px 20px; }
   .footer a {
     color: white;
     text-decoration: none; }
     .footer a:hover {
       text-decoration: underline; }
+
+@media only screen and (min-wdth: 740px) {
+  body {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.3fr 1.2fr 0.5fr;
+    gap: 0% 0%;
+    grid-template-areas: "header header" "section main" "section main" "aside aside" "footer footer"; } }

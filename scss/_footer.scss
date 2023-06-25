@@ -1,22 +1,27 @@
 .footer{
-    width: 100%;
+    padding-block-end: auto;
+    grid-area: footer;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 80%;
-    padding: .1px;
-    grid-area: footer;
-    
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    width: 100%;
+    margin-bottom: 0px;
+    background: rgb(162, 123, 92);
+    background: linear-gradient(
+      180deg,
+      rgba(162, 123, 92, 1) 36%,
+      rgba(44, 54, 57, 0.7958365475096288) 68%);
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
     background: rgb(162,123,92);
     background: linear-gradient(0deg, rgba(162,123,92,0.928921568627451) 30%, rgba(44,54,57,1) 95%);
     h2{
         color: white;
-        padding: 2px;
+        margin-left: 12px;
+         margin-block-end: 5px;
         } 
     p{
-        padding: 1px;
+        margin: 0px 0px 0px 20px;
+        
         
     }
     a{

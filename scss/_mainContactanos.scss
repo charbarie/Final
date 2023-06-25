@@ -1,0 +1,31 @@
+.mainContactanos{
+    width: 800px; 
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(162,123,92);
+    background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+    background-color: gray;
+    margin: 15px;
+    padding-inline-start: 10px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+    .form{
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        padding: 2%;
+        margin: 0%;
+        label{
+            align-items: center;
+            padding-left: 2%;
+        }
+        
+        
+    }
+}
