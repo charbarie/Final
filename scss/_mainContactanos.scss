@@ -1,4 +1,5 @@
 .mainContactanos{
+    color: aliceblue;
     grid-area: main;
     width: 60rem;
     margin-top:50rem;
@@ -17,16 +18,16 @@
     -o-border-radius:20px ;
     -o-border-radius:20px ;
     .form{
+        color: aliceblue;
         display: flex;
         flex-direction: column;
         text-align: center; 
         padding: 2%;
         margin: 0%;
         label{
+            color: aliceblue;
             align-items: center;
             padding-left: 2%;
         }
-        
-        
     }
 }

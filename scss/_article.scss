@@ -1,7 +1,8 @@
 .article {
+        
         padding-bottom: 30px;
         grid-area: article;
-        padding:20px;
+        padding:10px;
         margin:10px auto ;
         display: flex;
         flex-direction: column;
@@ -53,7 +54,7 @@
                 background-color:rgb(57, 70, 74);
             }
             h3{
-                font-size: 18px;
+                font-size: 20px;
                 color: aliceblue;
                 text-align: center;
                 padding: 10px;
@@ -67,10 +68,10 @@
             & p{
                 background-color:rgb(57, 70, 74);
                 font-family: 'Roboto Slab', serif;
-                font-size: 12px;
+                font-size: 16px;
                 line-height: 1;
-                margin: 0;
-                padding: 0;
+                margin: 0px;
+                padding: 0px;
             }
         }
 }

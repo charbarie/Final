@@ -20,15 +20,16 @@
         margin:20px ;
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 24px;
         background: a27b5c;
         background: radial-gradient(circle, $colorbg 10%, rgba(44,54,57,1) 85%); 
         
     }
     h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     p{
-        font-size: 12px;
+        padding: 20px;
+        font-size: 16px;
     }
 }
