@@ -3,9 +3,10 @@
     margin: 0%;
     box-sizing: border-box;
 }
+@import "var";
 @import "body";
 @import "header";
-@import "section";
+@import "article";
 @import "sectionProductos";
 @import "main";
 @import "mainProductos";

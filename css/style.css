@@ -24,29 +24,44 @@ body {
   -o-background-size: cover;
   background-size: cover;
   opacity: 100%; }
-
-h1 {
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-  padding: 5px; }
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 94%;
-  top: 30%;
-  top: 1x; }
-
-.redes img {
-  padding: 20px;
-  width: 100px;
-  border-radius: 40%;
-  -webkit-border-radius: 40%;
-  -moz-border-radius: 40%;
-  -ms-border-radius: 40%;
-  -o-border-radius: 40%; }
+  body h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px; }
+  body .redes {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 94%;
+    top: 30%;
+    top: 1x; }
+  body .redes img {
+    padding: 20px;
+    width: 100px;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%; }
+  body .filtroProductos {
+    width: 150px;
+    background: #a27b5c;
+    background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1%;
+    top: 30%;
+    top: 1x;
+    margin: 15px;
+    padding-inline-start: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
 
 .header {
   grid-area: header;
@@ -111,6 +126,7 @@ article {
     padding: 10px;
     justify-self: start; }
   article div {
+    background-color: #3f4e4f;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -118,43 +134,44 @@ article {
     margin: 10px;
     display: flex;
     text-align: center;
-    background-color: #3f4e4f;
     border-radius: 20px;
     padding-inline-start: 10px; }
   article.nos {
     opacity: 0%; }
   article.contactanos {
     opacity: 0%; }
-
-.news {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Inconsolata', monospace;
-  line-height: 1.5;
-  background-color: #39464a;
-  border: gainsboro;
-  overflow: auto;
-  color: #f9fafa; }
-  .news h2 {
-    text-align: auto;
-    font-size: 24px;
-    line-height: normal; }
-  .news h3 {
-    font-size: 18px;
-    color: aliceblue;
-    text-align: center;
+  article .news {
     padding: 10px;
-    justify-self: start;
-    font-weight: 100;
-    line-height: 20px;
-    padding: 0%; }
-  .news p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 12px;
-    line-height: 1;
-    margin: 0;
-    padding: 0; }
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.5;
+    background-color: #39464a;
+    border: gainsboro;
+    overflow: auto;
+    color: #f9fafa; }
+    article .news h2 {
+      text-align: auto;
+      font-size: 24px;
+      line-height: normal;
+      background-color: #39464a; }
+    article .news h3 {
+      font-size: 18px;
+      color: aliceblue;
+      text-align: center;
+      padding: 10px;
+      justify-self: start;
+      font-weight: 100;
+      line-height: 20px;
+      padding: 0%;
+      background-color: #39464a; }
+    article .news p {
+      background-color: #39464a;
+      font-family: 'Roboto Slab', serif;
+      font-size: 12px;
+      line-height: 1;
+      margin: 0;
+      padding: 0; }
 
 .filtroProductos {
   width: auto;
@@ -303,24 +320,6 @@ article {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px; }
-  .mainProductos .menuVentas {
-    flex-wrap: wrap;
-    padding: 40px;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    margin-left: 30%; }
-    .mainProductos .menuVentas img {
-      width: 200px;
-      min-height: 150px;
-      opacity: none;
-      border-radius: 30%;
-      -webkit-border-radius: 30%;
-      -moz-border-radius: 30%;
-      -ms-border-radius: 30%;
-      -o-border-radius: 30%;
-      border-color: black;
-      border-style: double; }
 
 .mainNoticias {
   width: 70rem;
@@ -401,22 +400,27 @@ article {
       padding-left: 2%; }
 
 .aside {
-  gap: 8px 8px;
-  margin-right: 10pxnpm run watch-css;
+  height: auto;
+  color: aliceblue;
   grid-area: aside;
-  padding: 5px;
+  align-items: center;
+  gap: 8px 8px;
+  margin-right: 10px;
+  padding: 10px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   background: #a27b5c;
   background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%);
   border-radius: 20px; }
-  .aside div {
-    padding: 30px;
+  .aside iframe {
+    width: 460px;
+    height: 215px;
     margin: 20px;
     border-radius: 20px;
     background-color: #3f4e4f;
-    color: white; }
+    color: white;
+    border: 0px; }
 
 .footer {
   padding-block-end: auto;
@@ -428,9 +432,7 @@ article {
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  background: #a27b5c;
-  background: linear-gradient(0deg, rgba(162, 123, 92, 0.928922) 30%, #2c3639 95%); }
+  font-size: 18px; }
   .footer h2 {
     color: white;
     margin-left: 12px;
@@ -443,11 +445,101 @@ article {
     .footer a:hover {
       text-decoration: underline; }
 
-@media only screen and (min-wdth: 740px) {
+@media only screen and (max-width: 640px) {
   body {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.3fr 1.2fr 0.5fr;
-    gap: 0% 0%;
-    grid-template-areas: "header header" "section main" "section main" "aside aside" "footer footer"; } }
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "header " "main " "article" "aside" "footer "; }
+    body .header {
+      grid-area: header;
+      display: flex;
+      flex-direction: column;
+      width: 100% 50%;
+      box-shadow: 0px 0px 1px;
+      padding: 1px;
+      justify-content: center; }
+      body .header .menu {
+        display: flex;
+        justify-content: center; }
+        body .header .menu ul {
+          display: flex;
+          flex-direction: row;
+          font-size: 24px;
+          justify-content: center;
+          align-items: center;
+          width: 80%; }
+          body .header .menu ul li {
+            align-items: center;
+            padding: 0%;
+            justify-content: center;
+            width: 80%; }
+    body .mainProductos {
+      width: auto;
+      align-items: center;
+      justify-content: center; }
+      body .mainProductos .menuVenta {
+        grid-area: main;
+        font-family: 'Inconsolata', monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    body .main {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      margin: 2px;
+      align-self: center;
+      text-align: center; }
+      body .main .carrete {
+        margin-top: 10%;
+        width: 450px;
+        height: 450px;
+        margin-bottom: 10px; }
+        body .main .carrete img {
+          width: 5px;
+          object-fit: cover; }
+    body .redes {
+      left: 85%; }
+    body .menuVenta img {
+      width: 200px;
+      min-height: 50px;
+      opacity: none;
+      border-radius: 30%;
+      -webkit-border-radius: 30%;
+      -moz-border-radius: 30%;
+      -ms-border-radius: 30%;
+      -o-border-radius: 30%;
+      border-color: black;
+      border-style: double; }
+    body .mainNoticias {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      margin: 2px;
+      align-self: center;
+      text-align: center; }
+    body .mainNosotros {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      margin: 2px;
+      align-self: center;
+      text-align: center; }
+    body .mainContactanos {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      margin: 2px;
+      align-self: center;
+      text-align: center; }
+    body aside {
+      grid-area: aside; }
+    body footer {
+      grid-area: footer; } }

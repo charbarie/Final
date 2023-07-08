@@ -5,15 +5,12 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 0px;
-    background: rgb(162, 123, 92);
-    background: linear-gradient(
-      180deg,
-      rgba(162, 123, 92, 1) 36%,
-      rgba(44, 54, 57, 0.7958365475096288) 68%);
+    background: $colorbg;
+    background: linear-gradient(180deg,$colorbg 36%,rgba(44, 54, 57, 0.7958365475096288) 68%);
     font-family: "Oswald", sans-serif;
     font-size: 18px;
-    background: rgb(162,123,92);
-    background: linear-gradient(0deg, rgba(162,123,92,0.928921568627451) 30%, rgba(44,54,57,1) 95%);
+
+   
     h2{
         color: white;
         margin-left: 12px;

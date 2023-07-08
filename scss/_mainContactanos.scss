@@ -4,8 +4,8 @@
     grid-area: main;
     justify-content: center;
     flex-direction: column;
-    background: rgb(162,123,92);
-    background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+    background:$colorbg;
+    background: linear-gradient(180deg, $colorbg 36%, rgba(44,54,57,0.7958365475096288) 68%);
     background-color: gray;
     margin: 15px;
     padding-inline-start: 10px;
