@@ -1,15 +1,15 @@
 body{
-  display: grid; 
-  position: relative;
-  min-height: 100vh;
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 70fr 50fr 100fr; 
-  grid-template-rows: .1fr .1fr .1fr; 
-  gap: 5% 0%; 
-  grid-template-areas: 
-      "header header header"
-      "article main aside"
-      "footer footer footer"; 
+    display: grid; 
+    position: relative;
+    min-height: 100vh;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 70fr 50fr 100fr; 
+    grid-template-rows: .1fr 2.1fr 0.01fr; 
+    gap: 5% 0%; 
+    grid-template-areas: 
+        "header header header"
+        "article main aside"
+        "footer footer footer"; 
     background-color:white;
     font-family: 'Roboto Slab', monospace;
     font-weight: auto;
@@ -22,54 +22,48 @@ body{
     -o-background-size: cover;
     background-size: cover;
     opacity: 100%;
-   
-   
-    
+    h1{
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 94%;
+        top: 30%;
+        top:1x;
+    }
+    .redes img{
+        padding: 20px;
+        width: 100px;
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+          
+    }
 
-h1{
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    padding: 5px;
-}
-
-
-.redes{
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 94%;
-  top: 30%;
-  top:1x;
-}
-.redes img{
-  padding: 20px;
-  width: 100px;
-  border-radius: 40%;
-  -webkit-border-radius: 40%;
-  -moz-border-radius: 40%;
-  -ms-border-radius: 40%;
-  -o-border-radius: 40%;
-}
-
-.filtroProductos{
-  width: 150px;
-  background:$colorbg;
-  background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
-  background-color: gray;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 1%;
-  top: 30%;
-  top:1x;
-  margin: 15px;
-  padding-inline-start: 10px;
-  border-radius:20px ;
-  -webkit-border-radius:20px ;
-  -moz-border-radius:20px ;
-  -ms-border-radius:20px ;
-  -o-border-radius:20px ;
-  
-
-}}
+    .filtroProductos{
+        width: 150px;
+        background:$colorbg;
+        background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 1%;
+        top: 30%;
+        top:1x;
+        margin: 15px;
+        padding-inline-start: 10px;
+        border-radius:20px ;
+        -webkit-border-radius:20px ;
+        -moz-border-radius:20px ;
+        -ms-border-radius:20px ;
+        -o-border-radius:20px ;
+      }
+  }

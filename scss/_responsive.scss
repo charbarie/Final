@@ -11,67 +11,51 @@
         "article"
         "aside"
         "footer ";
-    
-        
+        margin-left: 1px;
+        margin-right: 1px;
         .header{ 
-                grid-area: header;
-                display:flex;
-                flex-direction:column;
-                width: 100% 50%; 
-                box-shadow: 0px 0px 1px;
-                padding: 1px;
+            grid-area: header;
+            display:flex;
+            flex-direction:column;
+            width: 100% 50%; 
+            box-shadow: 0px 0px 1px;
+            padding: 1px;
+            justify-content: center;
+            .menu{
+                display: flex;
                 justify-content: center;
-            
-                .menu{
+                ul{
                     display: flex;
+                    flex-direction: row;
+                    font-size: 24px;
                     justify-content: center;
-                
-                    ul{
-                    
-                        display: flex;
-                        flex-direction: row;
-                        font-size: 24px;
-                        justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    li{
                         align-items: center;
+                        padding: 0%;
+                        justify-content: center;
                         width: 80%;
-                        
-                        li{
-                            align-items: center;
-                            padding: 0%;
-                            justify-content: center;
-                         
-                            width: 80%;
-                        }
                     }
                 }
-         }
-
-         .mainProductos{
+            }
+        }
+        .mainProductos{
             width: auto;
             align-items: center;
             justify-content: center;
             .menuVenta{
-            
-            grid-area: main;
-            font-family: 'Inconsolata', monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-           
-       
-           
-        
+                grid-area: main;
+                font-family: 'Inconsolata', monospace;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
-    }
         .main{
-            
-            grid-area: main;
-            display: flex;
-            flex-direction: column;
-            width:600px; 
-            margin: 2px; 
-            align-self: center; 
-            text-align: center;
+            width: auto;
+            align-items: center;
+            justify-content: center;
             .carrete{
                     margin-top: 10%;
                     width: 450px;
@@ -84,12 +68,9 @@
             }   
         }
         .redes{
-
             left: 85%;
-   
-          }
-          .menuVenta{
-     
+        }
+        .menuVenta{
             & img{
                 width: 200px;
                 min-height: 50px;
@@ -102,44 +83,36 @@
                 border-color: black;
                 border-style: double;
             }
-    
         }
         .mainNoticias{
-            grid-area: main;
-            display: flex;
-            flex-direction: column;
-            width:600px; 
-            margin: 2px;
-            align-self: center; 
-            text-align: center;
-
+            width: auto;
+            height:auto;
+            align-items: center;
+            justify-content: center;
         }
         .mainNosotros{
-            grid-area: main;
-            display: flex;
-            flex-direction: column;
-            width:600px; 
-            margin: 2px; 
-            align-self: center; 
-            text-align: center;
-
+            width: auto;
+            height:auto;
+            align-items: center;
+            justify-content: center;
         }
         .mainContactanos{
-            grid-area: main;
-            display: flex;
-            flex-direction: column;
-            width:600px; 
-            margin: 2px; 
-            align-self: center; 
-            text-align: center;
+            width: auto;
+            height:auto;
+            align-items: center;
+            justify-content: center;
         }
-
-        aside{
+        .aside{
             grid-area: aside;
-         
+            padding: auto;
+            width: auto;
+            height:auto;
         }
-        footer{
-            grid-area: footer;
+        .footer{
+            grid-area: footer ;
+            width: auto;
+            min-height: cal(100vh- 100px -200px);
+            border-top: 2px;
         }
 
     }

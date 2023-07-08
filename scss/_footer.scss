@@ -1,5 +1,5 @@
 .footer{
-    padding-block-end: auto;
+    width: 30%;
     grid-area: footer;
     display: flex;
     flex-direction: column;
@@ -9,17 +9,13 @@
     background: linear-gradient(180deg,$colorbg 36%,rgba(44, 54, 57, 0.7958365475096288) 68%);
     font-family: "Oswald", sans-serif;
     font-size: 18px;
-
-   
     h2{
         color: white;
         margin-left: 12px;
-         margin-block-end: 5px;
-        } 
+        margin-block-end: 5px;
+    } 
     p{
         margin: 0px 0px 0px 20px;
-        
-        
     }
     a{
         color: white;

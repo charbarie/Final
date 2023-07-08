@@ -1,5 +1,4 @@
 .main{
-    
     color:white;
     grid-area: main;
     grid-area: 20px;
@@ -18,103 +17,87 @@
     -moz-border-radius:20px ;
     -ms-border-radius:20px ;
     -o-border-radius:20px ;
-
-    h3{
-        text-align: center;
+    .bienvenida{
+        background-color: rgba(44,54,57,1) ;
         color: white;
-    }
-}
-.bienvenida{
-    background-color: rgba(44,54,57,1) ;
-    color: white;
-    font-family:sans-serif;
-    font-size:18px;
-    margin: 10px;
-    border-radius:20px ;
-    p {
-        text-align: center;
-        justify-content: auto;
-        margin: 30px;
-    }
-}
-
-.main h3{
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-family:sans-serif;
-    padding-top: 20px;
-    text-decoration:underline;
-}
-.main h4{
-    margin-top: 5rem;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-family:sans-serif;
-    text-decoration:underline;
-    text-transform: lowercase;
-}
-
-
-
-.carousel-item{
-   
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 35%;
-    margin-block-end: 5%;
-    margin-top: 5%;
-    img{
-        width: 100%;
-        padding: 0%;
-        width: 250px;
-        box-shadow:15px 0px 0px 0px;
-    }
-  
-}
-
-
-.noticias section{
-    background-color: bisque;
-    text-align: center;
-    padding: 2em;
-    margin: 40px;
-}
-.noticias h1{
-    font-family: 'Inconsolata', monospace;
-    margin: 10px;
-    padding: 12px;
-    text-align: center;
-    display: center;
-}
-
-    
-.carrete{
-  
-    margin-top: 40px;
-    display: flex;
-    width: 600px;
-    height: 600px;
-    align-self:center;  
-        & img{
-        width:15px;
-        flex-grow: 1;
-        object-fit: cover;
-        transition: .6s ease;
-        padding: 1px;
-      
-        &:hover {
-            align-items: center;
-            cursor: pointer;
-            width:500px;
-            opacity: 100%;
-            filter: contrast(140%);
-            background-color: black;
-            backface-visibility: visible;
-            zoom: 1;
-            border-radius: 5%;
+        font-family:sans-serif;
+        font-size:18px;
+        margin: 10px;
+        border-radius:20px ;
+        p{
+            text-align: center;
+            justify-content: auto;
+            margin: 30px;
         }
     }
+
+    h2{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-family:sans-serif;
+        padding-top: 20px;
+        text-decoration:underline;
+    }
+    h3{
+        margin-top: 5rem;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-family:sans-serif;
+        text-decoration:underline;
+        text-transform: lowercase;
+    }
+    .carousel-item{
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 35%;
+        margin-block-end: 5%;
+        margin-top: 5%;
+        img{
+            width: 100%;
+            padding: 0%;
+            width: 250px;
+            box-shadow:15px 0px 0px 0px;
+        }
+    }
+    .noticias section{
+        background-color: bisque;
+        text-align: center;
+        padding: 2em;
+        margin: 40px;
+    }
+    .noticias h1{
+        font-family: 'Inconsolata', monospace;
+        margin: 10px;
+        padding: 12px;
+        text-align: center;
+        display: center;
+    } 
+    .carrete{
     
+        margin-top: 40px;
+        display: flex;
+        width: 600px;
+        height: 600px;
+        align-self:center;  
+            & img{
+                width:15px;
+                flex-grow: 1;
+                object-fit: cover;
+                transition: .6s ease;
+                padding: 1px;
+                &:hover {
+                    align-items: center;
+                    cursor: pointer;
+                    width:500px;
+                    opacity: 100%;
+                    filter: contrast(140%);
+                    background-color: black;
+                    backface-visibility: visible;
+                    zoom: 1;
+                    border-radius: 5%;
+                }
+            }  
+    }
 }

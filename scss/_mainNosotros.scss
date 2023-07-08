@@ -1,17 +1,15 @@
-
 .mainNosotros{
-    color: white;
+    color: aliceblue;
     grid-area: main;
-    font-family: 'Inconsolata', monospace;
-    display: flex;
     width: 60rem;
-    margin: auto 300px;
-    flex-direction: column;
-    grid-area: 20px;
-    background:$colorbg;
+    margin-top:50rem;
+    grid-area: main;
+    display: flex;
+    margin: 20px;
+    background: $colorbg;
     background: linear-gradient(180deg, $colorbg 36%, rgba(44,54,57,0.7958365475096288) 68%);
-    background-color: gray;
-    margin: 15px;
+    flex-direction: column;
+    margin: 30px;
     padding-inline-start: 10px;
     border-radius:20px ;
     -webkit-border-radius:20px ;

@@ -1,21 +1,22 @@
 .mainContactanos{
-    width: 800px; 
-    display: flex;
     grid-area: main;
-    justify-content: center;
-    flex-direction: column;
-    background:$colorbg;
+    width: 60rem;
+    margin-top:50rem;
+    grid-area: main;
+    display: flex;
+    margin: 20px;
+    background: $colorbg;
     background: linear-gradient(180deg, $colorbg 36%, rgba(44,54,57,0.7958365475096288) 68%);
-    background-color: gray;
-    margin: 15px;
+    flex-direction: column;
+    margin: 30px;
     padding-inline-start: 10px;
     border-radius:20px ;
     -webkit-border-radius:20px ;
     -moz-border-radius:20px ;
     -ms-border-radius:20px ;
     -o-border-radius:20px ;
+    -o-border-radius:20px ;
     .form{
-    
         display: flex;
         flex-direction: column;
         text-align: center; 
